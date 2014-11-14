@@ -1,0 +1,19 @@
+{
+	"settings": {
+		"tab_size": 4
+		},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"build_systems": [
+		{
+			"name": "Test HTTP Client",
+			"cmd": ["python", "http-client.py"],
+			"working_dir": "${project_path}",
+		}
+	]
+}
