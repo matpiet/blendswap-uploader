@@ -23,14 +23,10 @@ import httplib2
 #
 # continue to normal UI
 
-host = "http://blendswap.dev"
-
-whoamiURL = host + "/users/whoami.json"
-
-loginURL = host + "/users/login.json"
-
-
 class Client():
+	"""Creates a little useless window in gtk
+	Works nicely and out-of-the-box in Ubuntu,
+	may not work in other platforms"""
 
 	http = httplib2.Http(".cache")
 

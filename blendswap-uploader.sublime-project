@@ -1,7 +1,8 @@
 {
 	"settings": {
 		"tab_size": 4,
-		"spell_check": false
+		"spell_check": false,
+		"translate_tabs_to_spaces": true
 		},
 	"folders":
 	[

@@ -3,10 +3,12 @@
 # This should work on Blender 2.5 and up
 
 import json
-import http.client
+from http.client import HTTPConnection as Connection
+
+headers = {'Accept': 'application/json,text/javascript,*/*; q=0.01'}
 
 # Create the connection and request it
-conn = http.client.HTTPConnection("dev.blendswap.com", 80)
+conn = http.client.HTTPConnection("dev.blendswap.com", 80, headers=headers)
 try:
 	conn.request("GET", "/blends/index/page:1.json")
 except:
