@@ -5,12 +5,12 @@
 import json
 from http.client import HTTPConnection as Connection
 
-headers = {'Accept': 'application/json,text/javascript,*/*; q=0.01'}
+header = {'Accept': 'application/json,text/javascript,*/*; q=0.01'}
 
 # Create the connection and request it
-conn = http.client.HTTPConnection("dev.blendswap.com", 80, headers=headers)
+conn = Connection("dev.blendswap.com", 80)
 try:
-	conn.request("GET", "/blends/index/page:1.json")
+	conn.request("GET", "/blends/index/page:1.json", headers=header)
 except:
 	raise
 
